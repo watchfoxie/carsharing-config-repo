@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/customer
+    username: csadmin
+    password: csadmin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    web:
+      exposed:
+        included: '*'

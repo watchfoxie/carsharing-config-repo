@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: driver
+  datasource:
+    url: jdbc:postgresql://localhost:5432/driver
+    username: csadmin
+    password: csadmin123
+
+server:
+  port: 8081
+
+management:
+  endpoint:
+    routes:
+      enabled: true
+    web:
+      exposed:
+        included: '*'
